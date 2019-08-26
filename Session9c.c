@@ -11,7 +11,7 @@ int main(){
 	
 	int number = 2;
 	int power = 5;
-	powerOfNumber(number, power)	
+	powerOfNumber(number, power);	
 
 	return 0;
 }

@@ -20,12 +20,37 @@
 
 void constructWall(int numOfBricks){
 
+	int jacksBrick = 0;
+	int totalBricks = 0;
+
+	for(int johnsBrick=1;johnsBrick<=numOfBricks;johnsBrick++){
+
+		printf("John Planted Brick(s)# %d\n",johnsBrick);
+		totalBricks = totalBricks + johnsBrick;
+
+
+		jacksBrick = 2 * johnsBrick;
+		printf("Jack Planted Brick(s)# %d\n",jacksBrick);
+
+		totalBricks = totalBricks + jacksBrick;
+		printf(">> Total Bricks Planted: %d\n",totalBricks);
+
+		if(totalBricks >= numOfBricks){
+			break;
+		}
+
+	}
+
 }
 
 int main(){
 
-	int bricks = 11;
-	constructWall(numOfBricks)
+	int bricks = 0;
+
+	printf(">> Enter Number of Bricks:\n");
+	scanf("%d", &bricks);
+
+	constructWall(bricks);
 
 	return 0;
 }
